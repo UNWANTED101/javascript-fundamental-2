@@ -1,0 +1,82 @@
+var readline = require ('readline-sync');
+ 
+//piramid
+var n = readline.question('masukan angka : ');
+{
+    for (var i = 1; i <= n; i++) {
+      var str = '';
+      for (var j = i; j <= n; j++) {
+        str = str + '_';
+      }
+      for (var k = 1; k <= i; k++) {
+        str = str + '*';
+      }
+      for (var l=1;l<=i-1;l++){
+        var str = str+ '*';
+      }
+      console.log(str);
+    }
+  }
+console.log('\n');
+
+//segitiga siku
+for(var i = 1; i <= n; i++) {
+  var a = '';
+  for(var j = 1; j <= i; j++) {
+    var a = a + '*';
+  }
+  console.log(a);
+}
+console.log('\n');
+
+//segitiga siku kebalik
+for(var i = n; i > 0; i--) {
+  var a = '';
+  for(var j = 1; j <= i; j++) {
+    var a = a + '*';
+  }
+  console.log(a);
+}
+
+//segitiga siku beda sisi
+for (var i=1;i<=n;i++){
+  var x = '';
+      for (var y=i;y<=n;y++){
+           var x= x+ '_';
+      }
+      for (var z=1;z<=i;z++){
+           var x= x+ '*';
+      }
+      console.log(x);
+  }
+
+console.log('\n');
+
+//segitiga siku kebalik sisi lain
+  for (var i=1;i<=n;i++){
+  var a = '';
+      for (var b=1;b<=i;b++){
+          var a= a+ '_';
+      }
+      for (var o=i;o<=n;o++){
+          var a= a+ '*';
+      }
+      console.log(a);
+  }
+
+console.log('\n');
+
+//segitiga piramida tumplek
+for (var i=1;i<=n;i++){
+var a = '';
+      for (var b=1;b<=i;b++){
+           var a= a+ '_';
+      }
+      for (var j=i;j<=n;j++){
+          var a= a+ '*';
+      }
+      for (var k=i+1;k<=n;k++){
+          var a= a+ '*';
+      }
+       console.log(a);
+  }
